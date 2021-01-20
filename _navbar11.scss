@@ -1,0 +1,43 @@
+nav{
+    
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+   
+    padding-left: 30px;
+    padding-right: 30px;
+    border-bottom: 4px black;
+
+    h1{
+        padding: 10px 20px;
+    }
+}
+ul{
+    display: flex;
+    list-style-type: none;
+
+}
+li{
+    padding: 10px 20px;
+    display: inline-block;
+    
+    margin-left: 10px;
+    margin-right: 40px;
+
+    a{
+        text-decoration: none;
+        color: #f1edf3 ;
+    }
+
+    &:hover{
+        background-color:#f0563f ;
+    
+    }
+     
+   
+    
+}

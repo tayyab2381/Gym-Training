@@ -1,0 +1,89 @@
+$primary-color:#f0563f;
+$secndary-color:white;
+$thirdary-color:black;
+
+@mixin  bright {
+    filter:brightness(20%);
+    
+}
+@mixin shado{
+    box-shadow: 0 5px 20px rgba(#000,0.5);
+    
+}
+@mixin transf {
+    position: absolute;
+    top:40%;
+    color: $secndary-color;
+    transform: translate(-50%, -50%);
+    
+}
+@mixin box{
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    
+    h3,p{
+        color: $thirdary-color;
+    }
+}
+
+ 
+
+@mixin sec2{
+    .box1{
+        flex-grow: 1;
+        display: flex;
+        padding: 20px 40px 20px 40px;
+
+        .f1{
+            display: flex;
+            @include shado;
+            margin: 5px 20px;
+            .f2{
+                width: 70%;
+                padding: 10px;
+                }
+            
+            & p{
+                color: $thirdary-color;
+            }    
+            .f3{
+                padding-left: 20px;
+                padding-right: 10px;
+                padding-top: 10px;
+                width: 30%;
+
+                img{
+                    width: 100%;
+                    height: 90%;
+                }
+                
+            }
+        }
+
+    }
+
+    
+}
+
+@mixin foot{
+    margin-top: 60px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: $thirdary-color;
+    
+
+    .ff{
+        width: 50%;
+        padding: 10px;
+        text-align: center;
+        color: $secndary-color;
+        
+
+        
+
+    }
+    
+}

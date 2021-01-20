@@ -1,0 +1,130 @@
+ @import 'navbar11';
+ @import 'body1';
+ @import 'variables';
+
+
+.a1{
+    width: 100%;
+    img{
+        width: 100%;
+        height: 900px;
+        margin-top: -100px;
+        filter:brightness(20%);
+    }
+}
+
+
+ 
+.z1{
+    text-align: center;
+    color: white;
+    position: absolute;
+    top:20%;
+    left: 24%;
+
+    h1,p{
+        padding: 10px;
+    }
+    
+     
+
+    span{
+        color:#f0563f ;
+    }
+    .tabd{
+        width: 100%;
+        
+    }
+    table {
+        
+ 
+        border-collapse: collapse;
+        
+         width: 100%;
+       }
+       
+       th, td {
+        border: 1px solid white;
+         text-align: center;
+         padding: 30px 40px;
+         height: 1 m00px;
+         width: 100px;
+      
+       }
+}
+
+.section1{
+     @include box;
+}
+.section2{
+    display: flex;
+    height: auto;
+    flex-wrap: wrap;
+    
+
+    .left{
+        width:30%;
+        height: 600px;
+        background-color:white;
+        padding: 20px;
+
+        .f1{
+            padding: 30px 40px ;
+            margin: 20px;
+            @include shado;
+            span{
+                font-weight: bold;
+            }
+        }
+        .f3{
+            
+            padding: 13px 40px 13px 40px ;
+            margin: 20px;
+            @include shado;
+            background-color:$primary-color ;
+            color: $secndary-color;
+            .p{
+                text-align: center;
+                
+            }
+         
+
+        }
+    }
+    .right{
+        width: 70%;
+        height: 600px;
+        background-color: $secndary-color;
+        padding: 40px 20px 20px 20px;
+
+        h1,p,a{
+            margin-top: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: $secndary-color;
+            background-color:$primary-color;
+            padding: 10px 20px;
+            margin-top: 10px;
+            @include shado;
+            
+        }
+
+        img{
+            border-radius: 4px;
+            }
+
+    }
+
+    
+}
+.footer{
+     @include foot;
+}
+   
+
+
+
+
+
+ 
